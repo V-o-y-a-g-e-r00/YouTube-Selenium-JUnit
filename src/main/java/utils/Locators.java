@@ -10,8 +10,8 @@ public interface Locators {
 
         By firstVideoButton = By.xpath("//*[@id='video-title']");
 
-        By searchForm = By.xpath("//*[@id='search-form']/div[@id='container']/div[@id='search-input']/input[@id='search']");
-
+        By searchForm = By.cssSelector("#container");
+        By searchInput = By.cssSelector("#search");
         By searchButton = By.xpath("//*[@id='search-icon-legacy']");
     }
 
@@ -30,15 +30,15 @@ public interface Locators {
 
         By videoTitle = By.xpath("//*[@id=\"title\"]/h1/yt-formatted-string");
 
-        By likeVideoButton = By.xpath("//*[@id='top-level-buttons-computed']/segmented-like-dislike-button-view-model[@class='YtSegmentedLikeDislikeButtonViewModelHost style-scope ytd-menu-renderer']/yt-smartimation[@class='smartimation smartimation--enable-masking']/div[@class='smartimation__content']/div[@class='YtSegmentedLikeDislikeButtonViewModelSegmentedButtonsWrapper']/like-button-view-model[@class='YtLikeButtonViewModelHost']/toggle-button-view-model/button-view-model[@class='yt-spec-button-view-model']/button[@class='yt-spec-button-shape-next yt-spec-button-shape-next--tonal yt-spec-button-shape-next--mono yt-spec-button-shape-next--size-m yt-spec-button-shape-next--icon-leading yt-spec-button-shape-next--segmented-start']");
+        By likeVideoButton = By.xpath("//*[@id=\"top-level-buttons-computed\"]/segmented-like-dislike-button-view-model/yt-smartimation/div/div/like-button-view-model/toggle-button-view-model/button-view-model/button");
 
         By guideButton = By.xpath("//*[@id='guide-button']");
 
-        By likedVideosButton = By.xpath("//*[@id='sections']/ytd-guide-section-renderer[@class='style-scope ytd-guide-renderer'][1]/div[@id='items']/ytd-guide-collapsible-section-entry-renderer[@class='style-scope ytd-guide-section-renderer']/div[@id='section-items']/ytd-guide-entry-renderer[@class='style-scope ytd-guide-collapsible-section-entry-renderer'][6]/a[@id='endpoint']/tp-yt-paper-item[@class='style-scope ytd-guide-entry-renderer']");
+        By likedVideosButton = By.xpath("/html/body/ytd-app/div[1]/tp-yt-app-drawer/div[2]/div/div[2]/div[2]/ytd-guide-renderer/div[1]/ytd-guide-section-renderer[1]/div/ytd-guide-collapsible-section-entry-renderer/div[2]/ytd-guide-entry-renderer[5]/a");
 
         By videosHistoryButton = By.xpath("//*[@id='sections']/ytd-guide-section-renderer[@class='style-scope ytd-guide-renderer'][1]/div[@id='items']/ytd-guide-collapsible-section-entry-renderer[@class='style-scope ytd-guide-section-renderer']/div[@id='section-items']/ytd-guide-entry-renderer[@class='style-scope ytd-guide-collapsible-section-entry-renderer'][2]/a[@id='endpoint']/tp-yt-paper-item[@class='style-scope ytd-guide-entry-renderer']");
 
-        By subscribeButton = By.xpath("//*[@id='subscribe-button-shape']");
+        By subscribeButton = By.xpath("//*[@id=\"subscribe-button-shape\"]/button");
 
         By channelButton = By.xpath("//*[@id='owner']/ytd-video-owner-renderer[@class='style-scope ytd-watch-metadata']/div[@id='upload-info']/ytd-channel-name[@id='channel-name']/div[@id='container']/div[@id='text-container']");
     }
@@ -64,7 +64,7 @@ public interface Locators {
 
         By notificationButton = By.xpath("//*[@id='channel-header']/div[@id='channel-header-container']/div[@id='inner-header-container']/div[@id='buttons']");
 
-        By unsubscribeButton = By.xpath("//*[@id='items']/ytd-menu-service-item-renderer[@class='style-scope ytd-menu-popup-renderer'][3]/tp-yt-paper-item[@class='style-scope ytd-menu-service-item-renderer']");
+        By unsubscribeButton = By.xpath("//*[@id=\"items\"]/ytd-menu-service-item-renderer[4]/tp-yt-paper-item");
 
         By confirmUnsubscribeButton = By.xpath("//*[@id='confirm-button']/yt-button-shape[@class='style-scope ytd-popup-container']");
     }
