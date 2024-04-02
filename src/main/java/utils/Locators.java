@@ -38,9 +38,9 @@ public interface Locators {
 
         By videosHistoryButton = By.xpath("//*[@id='sections']/ytd-guide-section-renderer[@class='style-scope ytd-guide-renderer'][1]/div[@id='items']/ytd-guide-collapsible-section-entry-renderer[@class='style-scope ytd-guide-section-renderer']/div[@id='section-items']/ytd-guide-entry-renderer[@class='style-scope ytd-guide-collapsible-section-entry-renderer'][2]/a[@id='endpoint']/tp-yt-paper-item[@class='style-scope ytd-guide-entry-renderer']");
 
-        By subscribeButton = By.xpath("//*[@id='subscribe-button-shape']");
+        By subscribeButton = By.xpath("/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[2]/ytd-watch-metadata/div/div[2]/div[1]/div/ytd-subscribe-button-renderer/yt-smartimation/div/__slot-el/yt-button-shape/button");
 
-        By channelButton = By.xpath("//*[@id='owner']/ytd-video-owner-renderer[@class='style-scope ytd-watch-metadata']/div[@id='upload-info']/ytd-channel-name[@id='channel-name']/div[@id='container']/div[@id='text-container']");
+        By channelButton = By.xpath("/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[2]/ytd-watch-metadata/div/div[2]/div[1]/ytd-video-owner-renderer/div[1]/ytd-channel-name");
     }
 
     interface SearchPage {
